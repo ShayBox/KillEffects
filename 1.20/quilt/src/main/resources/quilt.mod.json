@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "killeffects",
+    "version": "${version}",
+    "metadata": {
+      "name": "KillEffects",
+      "description": "Client side player kill effects",
+      "contributors": {
+        "ShayBox": "Author"
+      },
+      "icon": "assets/killeffects/icon.png"
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "entrypoints": {
+      "client_init": [
+        "com.shaybox.killeffects.quilt.client.MainQuiltClient"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": ">=1.20"
+      }
+    ]
+  },
+  "mixin": [
+    "killeffects.mixins.json"
+  ]
+}

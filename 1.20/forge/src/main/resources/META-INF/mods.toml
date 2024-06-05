@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[46,)"
+issueTrackerURL = "https://github.com/ShayBox/KillEffects/issues"
+license = "MIT"
+
+[[mods]]
+modId = "killeffects"
+version = "${version}"
+displayName = "KillEffects"
+authors = "ShayBox"
+description = '''
+Client side player kill effects
+'''
+logoFile = "assets/killeffects/icon.png"
+
+[[dependencies.killeffects]]
+modId = "forge"
+mandatory = true
+versionRange = "[46,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.killeffects]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20,)"
+ordering = "NONE"
+side = "BOTH"
